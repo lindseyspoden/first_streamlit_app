@@ -19,7 +19,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?', '')
+fruit_choice = streamlit.text_input('What fruit would you like information about?', 'Apple')
 streamlit.write('The user entered', fruit_choice)
 
 
